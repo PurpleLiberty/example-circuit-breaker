@@ -13,10 +13,10 @@
   <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
                 id="defaultHttpEndpoint" host="*" />
 
-  <webApplication location="circuit-breaker-greeting.war" contextRoot="${app.context.root}"/>
+  <webApplication location="openliberty-circuit-breaker-greeting.war" contextRoot="${app.context.root}"/>
 
   <mpMetrics authentication="false"/>
-  
+
   <httpDispatcher enableWelcomePage="false"/>
-  <logging traceSpecification="FAULTTOLERANCE=all:com.ibm.ws.jaxrs.*=all:com.ibm.websphere.jaxrs.*=all:org.apache.cxf.jaxrs.*=all"/>  
+
 </server>

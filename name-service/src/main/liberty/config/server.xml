@@ -13,12 +13,11 @@
   <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
                 id="defaultHttpEndpoint" host="*" />
 
-  <webApplication location="circuit-breaker-name.war" contextRoot="${app.context.root}"/>
+  <webApplication location="circuit-breaker-name.war" contextRoot="/"/>
    
-  <cors domain="${app.context.root}"
+  <cors domain="/"
       allowedOrigins="*"
-      allowedMethods="*"
+      allowedMethods="GET, POST, PUT, DELETE"
       allowedHeaders="*"/>
       
-  <logging traceSpecification="com.ibm.ws.jaxrs.*=all:com.ibm.websphere.jaxrs.*=all:org.apache.cxf.jaxrs.*=all"/>
 </server>
