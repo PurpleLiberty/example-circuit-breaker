@@ -87,7 +87,7 @@
               <goal>package</goal>
             </goals>
             <configuration>
-              <packageName>rest-http-crud-openliberty</packageName>
+              <packageName>greeting-service-openliberty</packageName>
               <include>runnable</include>
             </configuration>
           </execution>
