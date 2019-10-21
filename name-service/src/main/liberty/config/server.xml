@@ -13,7 +13,7 @@
   <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
                 id="defaultHttpEndpoint" host="*" />
 
-  <webApplication location="circuit-breaker-name.war" contextRoot="/"/>
+  <webApplication location="openliberty-circuit-breaker-name.war" contextRoot="/"/>
    
   <cors domain="/"
       allowedOrigins="*"
